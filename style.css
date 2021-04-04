@@ -41,7 +41,7 @@ header {
     box-sizing: 0px;
     border: none;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background : none;
     padding-top: 2%;
     cursor: pointer;
 }
@@ -109,6 +109,9 @@ header {
     .btn-burger {
         display: flex;
         z-index: 2;
+    }
+    .btn-burger .bar {
+        background-color: rgb(162, 213, 198);
     }
     body {
         margin-top: 0;
