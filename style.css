@@ -17,6 +17,7 @@ header {
     letter-spacing: 1.5px;
     color : #2D2B2B;
     -webkit-text-stroke: 1px rgba(162, 213, 198, 0.7);
+
 }
 
 .line {
@@ -126,6 +127,7 @@ header {
         z-index: 1;
         height: 100vh;
         font-size: 7vw;
+        background-color : #2D2B2B;
     }
     header .nav_container {
         display: flex;
