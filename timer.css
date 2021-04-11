@@ -6,7 +6,8 @@ body {
 
 .content {
     display : flex;
-    height: 90%;
+    margin-top: 5%;
+    height: 95%;
     align-items: center;
     justify-content: center;
     flex-direction: column;

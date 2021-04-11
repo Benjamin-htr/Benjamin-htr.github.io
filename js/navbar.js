@@ -1,6 +1,6 @@
 addEventListener("load", function () {
     if (window.matchMedia("(min-width: 600px)").matches) {
-        document.querySelector('header').hidden = false;
+        document.querySelector('header').style.display = "inline";
     }
     var nav = document.querySelectorAll('header nav');
     for (var i = 0; i < nav.length; ++i) {
@@ -207,7 +207,7 @@ addEventListener("load", function () {
         if (window.matchMedia("(min-width: 600px)").matches) {
             if (document.querySelector('header .menu_begin') !== null) {
                 document.querySelector('header .menu_begin').remove();
-                document.querySelector('header').hidden = false;
+                document.querySelector('header').style.display = "inline";
                 
                 
             }
@@ -225,8 +225,9 @@ addEventListener("load", function () {
                 let bool = burger.classList.contains('active');
                 burger.classList.toggle('active');
                 let header = document.querySelector('header');
-                header.hidden = bool;
-                if (!header.hidden) {
+                bool ? header.style.display = "none" : header.style.display = "flex";
+                
+                if (!bool) {
                     updateline();
                 }
                 
@@ -247,11 +248,19 @@ function addImg() {
         logo.classList.add('logo_menu');
         logo.src = './assets/logo.svg';
         div.appendChild(logo);
-        span = document.createElement('span');
+        let name = document.createElement('div');
+        name.classList.add('name');
+        name.textContent = "Benjamin";
+        div.appendChild(name);
+
+        let statut = document.createElement("div");
+        statut.textContent = "Développeur web / logiciel";
+        div.appendChild(statut);
+
         header.insertBefore(div, header.firstChild);
         let burger = document.querySelector('.btn-burger');
         let bool = burger.classList.contains('active');
-        header.hidden = !bool;
+        !bool ? header.style.display = "none" : header.style.display = "flex";
 
     }
     
