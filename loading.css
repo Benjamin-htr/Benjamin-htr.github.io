@@ -47,9 +47,12 @@
     .name-loading {
         font-size: 7vmin;
     }
-
-
+    .loading div {
+        width: 500px;
+        height: 500px;
+    }
 }
+
 
 .loading {
     top : -10px;

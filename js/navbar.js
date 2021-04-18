@@ -1,7 +1,7 @@
 console.log("salut");
 addEventListener("load", function () {
     if (window.matchMedia("(min-width: 600px)").matches) {
-        /* document.querySelector('header').style.display = "inline"; */
+        document.querySelector('header').style.display = "inline";
     }
     var nav = document.querySelectorAll('header nav');
     for (var i = 0; i < nav.length; ++i) {
@@ -201,6 +201,7 @@ addEventListener("load", function () {
             if (document.querySelector('header .menu_begin') === null) {
                 addImg();
                 
+                
             }
             
             
@@ -208,7 +209,7 @@ addEventListener("load", function () {
         if (window.matchMedia("(min-width: 600px)").matches) {
             if (document.querySelector('header .menu_begin') !== null) {
                 document.querySelector('header .menu_begin').remove();
-                /* document.querySelector('header').style.display = "inline"; */
+                document.querySelector('header').style.display = "inline";
                 
                 
             }

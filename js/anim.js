@@ -65,7 +65,7 @@ barba.init({
 		
     }   
   }],
-  /* views: [
+  views: [
     {
         namespace: 'home',
         afterEnter(data) {
@@ -80,11 +80,11 @@ barba.init({
             timer('.en');
         }
     }
-] */
+]
 });
-/* barba.hooks.afterEnter((data) => {
+barba.hooks.afterEnter((data) => {
     updateline()
-}); */
+});
 console.log('barba');
 
 
