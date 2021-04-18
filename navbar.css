@@ -173,7 +173,7 @@ header {
         font-size: 7vw;
         background-color : #2D2B2B;
         transition: all 1s;
-        opacity: 0.4;
+        opacity: 0.85;
         
 }
     .header-active {
