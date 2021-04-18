@@ -1,6 +1,7 @@
+console.log("salut");
 addEventListener("load", function () {
     if (window.matchMedia("(min-width: 600px)").matches) {
-        document.querySelector('header').style.display = "inline";
+        /* document.querySelector('header').style.display = "inline"; */
     }
     var nav = document.querySelectorAll('header nav');
     for (var i = 0; i < nav.length; ++i) {
@@ -111,7 +112,7 @@ addEventListener("load", function () {
         });
     });
 
-    let spans1 = document.querySelectorAll('header .languages_ch span')
+    let spans1 = document.querySelectorAll('header .languages_ch a')
     let nav1 = document.querySelector('.languages_ch')
     let line1 = document.querySelector('header .languages_ch .line')
 
@@ -207,7 +208,7 @@ addEventListener("load", function () {
         if (window.matchMedia("(min-width: 600px)").matches) {
             if (document.querySelector('header .menu_begin') !== null) {
                 document.querySelector('header .menu_begin').remove();
-                document.querySelector('header').style.display = "inline";
+                /* document.querySelector('header').style.display = "inline"; */
                 
                 
             }
@@ -225,7 +226,9 @@ addEventListener("load", function () {
                 let bool = burger.classList.contains('active');
                 burger.classList.toggle('active');
                 let header = document.querySelector('header');
-                bool ? header.style.display = "none" : header.style.display = "flex";
+                /* bool ? header.style.display = "none" : header.style.display = "flex"; */
+                header.classList.toggle("header-active");
+                
                 
                 if (!bool) {
                     updateline();
@@ -257,10 +260,12 @@ function addImg() {
         statut.textContent = "Développeur web / logiciel";
         div.appendChild(statut);
 
+
         header.insertBefore(div, header.firstChild);
         let burger = document.querySelector('.btn-burger');
         let bool = burger.classList.contains('active');
-        !bool ? header.style.display = "none" : header.style.display = "flex";
+        /* !bool ? header.style.display = "none" : header.style.display = "flex"; */
+    
 
     }
     
@@ -285,6 +290,7 @@ function updateline() {
         //console.log('upd pos2',position)
         line2.style.left = position+'px';
         line2.style.width = width+'px';
+        console.log('update')
     };
 }
 

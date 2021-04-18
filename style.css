@@ -19,10 +19,10 @@ header {
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 1.5px;
-    color : #2D2B2B;
+    color : rgba(16, 16, 16, 0.0);;
     -webkit-text-stroke: 1px rgba(162, 213, 198, 0.85);
-
 }
+
 
 .social-media {
     display: none;
@@ -115,10 +115,12 @@ header {
     header { padding-top: 5px; 
             background-color: rgba(16, 16, 16, 0.82);
             height : 47px;
+            z-index : 6;
     }
     header .nav_container {
         padding-left: 5px;
         padding-right: 5px;
+        
     }
 }
 
@@ -163,14 +165,25 @@ header {
         width: 100vw;
         bottom: 0px;
         position: fixed;
-        
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         z-index: 1;
-        height: 100vh;
+        height: 0vh;
         font-size: 7vw;
         background-color : #2D2B2B;
-    }    
+        transition: all 1s;
+        opacity: 0.4;
+        
+}
+    .header-active {
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        
+    
+}
+    
     #scrolling {
         overflow: auto;
         max-height: 100%;
@@ -278,12 +291,12 @@ header nav .box {
     display : inline-block;
 }
 
-header nav span {
+header nav a {
     position: relative;
     cursor: pointer;
 }
 
-header nav span:before {
+header nav a:before {
     content: attr(data-text);
     color : #A2D5C6;
     position: absolute;
@@ -296,13 +309,19 @@ header nav span:before {
 }
 
 
-header nav span:hover:before {
+header nav a:hover:before {
     width : 100%;
 }
 
-header nav span:hover:after {
+header nav a:hover:after {
     width : 0;
     left: 100%;
+}
+
+header nav a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: rgba(16, 16, 16, 0.0);
+    -webkit-text-stroke: 1px rgba(162, 213, 198, 0.85);
 }
 
 .languages_ch {
@@ -317,3 +336,5 @@ header nav span:hover:after {
     height : 3000px;
     padding-top: 6vh;
 }
+
+

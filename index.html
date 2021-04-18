@@ -20,26 +20,26 @@
         <meta name="twitter:description" content="Site Web officiel de Benjamin Hautier. Développeur informatique.">
         <meta name="twitter:title" content="Benjamin Hautier - WebSite">
         <meta name="twitter:image" content="https://benjamin-htr.github.io/assets/logo1200.png">
-        <script src="./js/navbar.js" async='true'></script>
-        <script src="./js/timer.js" async='true'></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="./style.css" type="text/css">
         <link rel="stylesheet" href="./timer.css" type="text/css">
+        <link rel="stylesheet" href="./loading.css" type="text/css">
         <link rel="icon" type="image/png" href="./assets/icon.png" sizes="32x32"/>
         
         
     </head>
-    <body>
+    <body data-barba="wrapper">
         <div class="btn-back"></div>
         <button class="btn-burger">
             <span class="bar bar--1"></span>
             <span class="bar bar--2"></span>
         </button>
-        <header hidden="true" id="scrolling">
+        <header id="scrolling">
             <div class="nav_container">
                 <nav class="languages_ch">
-                    <span data-text='EN'>EN</span>
-                    <span data-text='FR' class = "active">FR</span>
+                    <a href="./index.en.html" data-text='EN'>EN</a>
+                    <a href="./index.html" data-text='FR' class="active">FR</a>
+                    <!-- <span data-text='FR' class = "active">FR</span> -->
                 </nav>
                 <nav class="pages_ch">
                     <div class ="box">
@@ -68,30 +68,56 @@
             </div>
             
         </header>
-        <div class = "content">
-            <p>Work in Progress ...</p>
-            <div class="deconstructed">
-                New content in :
-                <div>New content in :</div>
-                <div>New content in :</div>
-                <div>New content in :</div>
-                <div>New content in :</div>
-              </div>
-            <p class = "timer" data-date="Apr 19, 2021 00:00:00"></p>
-            <p>Meanwhile you can visit my other media :</p>
-            <p class = "social-media1">
-                <a href="https://www.linkedin.com/in/benjamin-hautier/">
-                    <img src = "./assets/linkedin.svg">
-                </a>
-                    
-                <a href="https://github.com/Benjamin-htr">
-                    <img src = "./assets/github.svg">
-                </a>
-               
-            </p>
-        </div>
-        <!-- <div class="content2">
+        <div class="load-container">
+            <div class="loading-screen">
+                <img src="./assets/logo.svg">
+                <div class="name-loading">Benjamin</div>
+                Benjamin vous livre
+                <div class="loading">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                    <div class="third"></div>
+                </div>
+                
+            </div>
             
-        </div> -->
+        </div>
+        <main data-barba="container" data-barba-namespace="home">
+             <!-- put here the content you wish to change
+            between your pages, like your main content <h1> or <p> --> 
+                <!-- <div class = "content" >
+                    <p class="animate-this">Work in Progress ...</p>
+                    <div class="deconstructed">
+                        New content in :
+                        <div>New content in :</div>
+                        <div>New content in :</div>
+                        <div>New content in :</div>
+                        <div>New content in :</div>
+                      </div>
+                    <p class = "timer fr" data-date="Apr 19, 2021 00:00:00"></p>
+                    <p class = "animate-this">Meanwhile you can visit my other media :</p>
+                    <p class = "social-media1">
+                        <a href="https://www.linkedin.com/in/benjamin-hautier/">
+                            <img src = "./assets/linkedin.svg">
+                        </a>
+                            
+                        <a href="https://github.com/Benjamin-htr">
+                            <img src = "./assets/github.svg">
+                        </a>
+                       
+                    </p>
+                </div> -->
+                <div class="content2 animate-this">
+                    FRANCAIS
+                </div>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://unpkg.com/@barba/router"></script>
+        <script src="./js/navbar.js" async='true'></script>
+        <script src="./js/timer.js" async='true'></script>
+        <script src="./js/anim.js" async='true'></script>
+        
+    
     </body>
 </html>
