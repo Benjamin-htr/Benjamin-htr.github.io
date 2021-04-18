@@ -18,7 +18,7 @@ header {
     left : 0px;
     font-weight: bold;
     font-size: 25px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     color : rgba(16, 16, 16, 0.0);;
     -webkit-text-stroke: 1px rgba(162, 213, 198, 0.85);
 }
@@ -328,8 +328,8 @@ header nav a, a:hover, a:focus, a:active {
     
 }
 
-.pages_ch {
-    
+.pages_ch .box{
+    margin-right : 5px;
 }
 
 .content2 {

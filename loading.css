@@ -65,8 +65,8 @@
     align-items: center;
 }
 .loading div {
-    width: 380px;
-    height: 380px;
+    width: 55vmin;
+    height: 55vmin;
     position: absolute;
     border-top: 20px solid;
     border-radius: 50%;
