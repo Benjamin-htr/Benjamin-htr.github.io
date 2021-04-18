@@ -16,6 +16,7 @@ function delay(n) {
 function pageTransition() {
     var tl = gsap.timeline();
     tl.set(".load-container", {display : "initial"});
+    tl.set(".loading-screen", { top: "-100%" });
     tl.to(".loading-screen", {
         duration: 1.2,
         height: "100%",
@@ -30,7 +31,6 @@ function pageTransition() {
         ease: "Expo.easeInOut",
         delay: 0.3,
     });
-    tl.set(".loading-screen", { top: "-100%" });
     tl.set(".load-container", {display : "none"});
 	/* tl.call(contentAnimation); */
 	
