@@ -1,7 +1,7 @@
 function contentAnimation() {
 	console.log('coucou')
   var tl = gsap.timeline();
-  tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
+  tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.2, delay: 0.1 });
 }
 
 function delay(n) {
