@@ -61,7 +61,8 @@ barba.init({
      },
     async enter(data) {
 		contentAnimation();
-		console.log("enter",data.next.container);
+        console.log("enter",data.next.container);
+        updateline()
 		
     }   
   }],
