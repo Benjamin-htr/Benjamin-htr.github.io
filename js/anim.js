@@ -17,7 +17,7 @@ var scripList = [/* "./js/libs/matter.min.js",
 function reloadwindow() {
     value = document.querySelector("main").getAttribute("data-barba-namespace");
     console.log("value reload : ", value);
-    if (value === "home") {
+    if (value === "home" || value === "home-en") {
         window.location.reload();
     }
 }
@@ -136,7 +136,7 @@ barba.init({
         namespace: 'home-en',
         afterEnter(data) {
             console.log("sz-home-en");
-            timer('.en');
+            /* timer('.en'); */
         },
     }
 

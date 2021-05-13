@@ -375,43 +375,34 @@ svg .path {
   font-size: 30px !important;
   transition: 0.75s ease-out;
 }
-.content2 .button3D ul li:active span, ul li:hover span{
+.content2 .button3D ul li:active span, .content2 .button3D ul li:hover span{
   z-index: 1000;
   transition: .3s;
   color: #fff;
   /* box-shadw: -1px 1px 1px rgba(0, 0, 0, .5); */
 }
-.content2 .button3D ul li:active span:nth-child(5), ul li:hover span:nth-child(5){
+.content2 .button3D ul li:active span:nth-child(5), .content2 .button3D ul li:hover span:nth-child(5){
   transform: translate(32px, -32px);
   opacity: 1;
 }
-.content2 .button3D ul li:active span:nth-child(4), ul li:hover span:nth-child(4){
+.content2 .button3D ul li:active span:nth-child(4), .content2 .button3D ul li:hover span:nth-child(4){
   transform: translate(24px, -24px);
   opacity: .8;
 }
-.content2 .button3D ul li:active span:nth-child(3), ul li:hover span:nth-child(3){
+.content2 .button3D ul li:active span:nth-child(3), .content2 .button3D ul li:hover span:nth-child(3){
   transform: translate(16px, -16px);
   opacity: .6;
 }
-.content2 .button3D ul li:active span:nth-child(2), ul li:hover span:nth-child(2){
+.content2 .button3D ul li:active span:nth-child(2), .content2 .button3D ul li:hover span:nth-child(2){
   transform: translate(8px, -8px);
   opacity: .4;
 }
-.content2 .button3D ul li:active span:nth-child(1), ul li:hover span:nth-child(1){
+.content2 .button3D ul li:active span:nth-child(1), .content2 .button3D ul li:hover span:nth-child(1){
   transform: translate(0px, 0px);
   opacity: .2;
 }
-.content2 .button3D ul li:nth-child(1):active span, ul li:nth-child(1):hover span{
+.content2 .button3D ul li:nth-child(1):active span, .content2 .button3D ul li:nth-child(1):hover span{
   background: #a2d5c6 !important;
-}
-.content2 .button3D l li:nth-child(2):active span, ul li:nth-child(2):hover span{
-  background: #2C3456 !important;
-}
-.content2 .button3D ul li:nth-child(3):active span, ul li:nth-child(3):hover span{
-  background: #EA6E96 !important;
-}
-.content2 .button3D ul li:nth-child(4):active span, ul li:nth-child(4):hover span{
-  background: #FCEB00 !important;
 }
 .content2 .text {
   width : 50vw;
@@ -757,6 +748,7 @@ svg .path {
     padding-top: 7vh;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
     --button3D-color: #00071C;
 }
@@ -935,30 +927,30 @@ svg .path {
     color: #fff;
     /* box-shadw: -1px 1px 1px rgba(0, 0, 0, .5); */
 }
-.content4 .button3D ul li:active span:nth-child(5), ul li:hover span:nth-child(5){
+.content4 .button3D ul li:active span:nth-child(5), .content4 .button3D ul li:hover span:nth-child(5){
     transform: translate(32px, -32px);
     opacity: 1;
 }
-.content4 .button3D ul li:active span:nth-child(4), ul li:hover span:nth-child(4){
+.content4 .button3D ul li:active span:nth-child(4), .content4 .button3D ul li:hover span:nth-child(4){
     transform: translate(24px, -24px);
     opacity: .8;
 }
-.content4 .button3D ul li:active span:nth-child(3), ul li:hover span:nth-child(3){
+.content4 .button3D ul li:active span:nth-child(3), .content4 .button3D ul li:hover span:nth-child(3){
     transform: translate(16px, -16px);
     opacity: .6;
 }
-.content4 .button3D ul li:active span:nth-child(2), ul li:hover span:nth-child(2){
+.content4 .button3D ul li:active span:nth-child(2), .content4 .button3D ul li:hover span:nth-child(2){
     transform: translate(8px, -8px);
     opacity: .4;
 }
-.content4 .button3D ul li:active span:nth-child(1), ul li:hover span:nth-child(1){
+.content4 .button3D ul li:active span:nth-child(1), .content4 .button3D ul li:hover span:nth-child(1){
     transform: translate(0px, 0px);
     opacity: .2;
 }
-.content4 .button3D ul li:nth-child(1):active span, ul li:nth-child(1):hover span{
+.content4 .button3D ul li:nth-child(1):active span, .content4 .button3D ul li:nth-child(1):hover span{
     background: #FCEB00 !important;
 }
-.content4 .button3D l li:nth-child(2):active span, ul li:nth-child(2):hover span{
+.content4 .button3D l li:nth-child(2):active span, .content4 .button3D ul li:nth-child(2):hover span{
     background: #EA6E96 !important;
 }
 

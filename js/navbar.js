@@ -21,17 +21,17 @@ addEventListener("load", function () {
     for (var i = 0; i < active.length; ++i) {
         var item = active[i];
         pos = item.getBoundingClientRect().left;
-        console.log('pos change', pos)
+        console.log('pos change', pos);
         wid = item.offsetWidth;
         lines.item(i).style.width = wid+'px';
         lines.item(i).style.left = pos+'px';
     }
-    updateline()
+    updateline();
 
 
-    let spans2 = document.querySelectorAll('header .pages_ch a')
-    let nav2 = document.querySelector('.pages_ch')
-    let line2 = document.querySelector('header .pages_ch .line')
+    let spans2 = document.querySelectorAll('header .pages_ch a');
+    let nav2 = document.querySelector('.pages_ch');
+    let line2 = document.querySelector('header .pages_ch .line');
 
     
     
