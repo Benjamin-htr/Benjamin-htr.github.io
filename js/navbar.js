@@ -29,7 +29,7 @@ addEventListener("load", function () {
     updateline()
 
 
-    let spans2 = document.querySelectorAll('header .pages_ch span')
+    let spans2 = document.querySelectorAll('header .pages_ch a')
     let nav2 = document.querySelector('.pages_ch')
     let line2 = document.querySelector('header .pages_ch .line')
 
@@ -245,12 +245,20 @@ addEventListener("load", function () {
 
 function addImg() {
     if (window.matchMedia("(max-width: 600px)").matches && (document.querySelector('header .menu_begin') === null)) {
+        value = document.querySelector("main").getAttribute("data-barba-namespace");
+
+        var imgPath = "../../assets/logo.svg";
+
+        if (value ==="home" || value === "home-en") {
+            imgPath = './assets/logo.svg';
+        }
+        
         let header = document.querySelector('header');
         let div = document.createElement('div');
         div.classList.add('menu_begin');
         let logo = document.createElement('img');
         logo.classList.add('logo_menu');
-        logo.src = './assets/logo.svg';
+        logo.src = imgPath;
         div.appendChild(logo);
         let name = document.createElement('div');
         name.classList.add('name');
@@ -294,6 +302,7 @@ function updateline() {
         console.log('update')
     };
 }
+
 
 
 

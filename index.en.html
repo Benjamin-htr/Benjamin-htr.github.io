@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
     <head>
-        <title>Portfolio</title>
+        <title>BH | web / software developer student</title>
         <meta name="robots" content="max-image-preview:large">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="./navbar.css" type="text/css">
         <link rel="stylesheet" href="./timer.css" type="text/css">
         <link rel="stylesheet" href="./loading.css" type="text/css">
+        <link rel="stylesheet" href="./home.css" type="text/css">
         <link rel="icon" type="image/png" href="./assets/icon.png" sizes="32x32"/>
 
         
@@ -45,21 +46,24 @@
                 </nav>
                 <nav class="pages_ch">
                     <div class ="box">
-                        <!-- <a href="./index.en.html" data-text='EN' class="active">EN</a> -->
-                        <span data-text='HOME' class = "active">HOME</span>
+                        <!-- <span data-text='HOME' class = "active">HOME</span> -->
+                        <a href="./index.en.html" data-text='HOME' class = "active">HOME</a>
+                    </div> 
+                    <div class ="box">
+                        <!-- <span data-text='ME'>ME</span> -->
+                        <a href="./pages/skills/skills.en.html" data-text='ME'>ME</a>
                     </div>
                     <div class ="box">
-                        <!-- <a href="./index.html" data-text='FR'>FR</a> -->
-                        <span data-text='ME'>ME</span>
+                        <!-- <span data-text='MY SKILLS'>MY SKILLS</span> -->
+                        <a href="./pages/skills/skills.en.html" data-text='MY SKILLS'>MY SKILLS</a>
                     </div>
                     <div class ="box">
-                        <span data-text='MY SKILLS'>MY SKILLS</span>
+                        <!-- <span data-text='MY PROJECTS'>MY PROJECTS</span> -->
+                        <a href="./pages/skills/skills.en.html" data-text='MY PROJECTS'>MY PROJECTS</a>
                     </div>
                     <div class ="box">
-                        <span data-text='MY PROJECTS'>MY PROJECTS</span>
-                    </div>
-                    <div class ="box">
-                        <span data-text='CONTACT'>CONTACT</span>
+                        <!-- <span data-text='CONTACT'>CONTACT</span> -->
+                        <a href="./pages/skills/skills.en.html" data-text='CONTACT'>CONTACT</a>
                     </div>
                 </nav>
             </div>
@@ -82,13 +86,12 @@
                     <div class="second"></div>
                     <div class="third"></div>
                 </div>
-                
             </div>
         </div>
         <main data-barba="container" data-barba-namespace="home-en">
             <!-- put here the content you wish to change
             between your pages, like your main content <h1> or <p> -->
-                <div class = "content">
+                <div class = "content-timer">
                     <p class = "animate-this">Work in Progress ...</p>
                     <div class="deconstructed animate-this">
                         New content in :
@@ -114,12 +117,18 @@
                     ANGLAIS
                 </div>
         </main>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://unpkg.com/@barba/core"></script>
-        <script src="https://unpkg.com/@barba/router"></script>
+        <script src="./js/libs/gsap.min.js"></script>
+        <script src="./js/libs/barba.umd.js "></script>
+        <script src="./js/libs/barba-router.umd.js"></script>
         <script src="./js/navbar.js" async='true'></script>
         <script src="./js/timer.js" async='true'></script>
         <script src="./js/anim.js" async='true'></script>
+
+        <script src="./js/libs/matter.min.js"></script>
+        <script src="js/libs/render.js"></script>
+        <script src="js/libs/p5.min.js"></script>
+        <!-- <script src="./js/chains2.js" async='true'></script> -->
+        <!-- <script src="./js/home.js"></script> -->
         
         
     </body>
