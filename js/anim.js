@@ -78,6 +78,7 @@ function pageTransition() {
     });
     tl.set(".load-container", {display : "none"});
     tl.call(reloadwindow);
+    tl.call(updateline);
     tl.call( refreshLink);
     
     
@@ -115,7 +116,7 @@ barba.init({
     async enter(data) {
 		contentAnimation();
         console.log("enter",data.next.container);
-        updateline();
+        /* updateline(); */
        
         
 
@@ -142,10 +143,10 @@ barba.init({
 
 ]
 });
-barba.hooks.afterEnter((data) => {
+/* barba.hooks.afterEnter((data) => {
     updateline();
     
-});
+}); */
 console.log('barba');
 
 
