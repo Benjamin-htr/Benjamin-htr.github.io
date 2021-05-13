@@ -165,7 +165,7 @@ function refreshLink() {
     var me = document.querySelector(".pages_ch .box:nth-child(2) a");
     /* console.log("me : ",me); */
     var skills = document.querySelector(".pages_ch .box:nth-child(3) a");
-    projects = document.querySelector(".pages_ch .box:nth-child(4) a");
+    var projects = document.querySelector(".pages_ch .box:nth-child(4) a");
     var contact = document.querySelector(".pages_ch .box:nth-child(5) a");
 
     if (value === "home") {
@@ -173,10 +173,10 @@ function refreshLink() {
         fr.href="./index.html";
 
         home.href="./index.html";
-        me.href="./pages/skills/skills.fr.html";
+        me.href="./pages/me/me.fr.html";
         skills.href="./pages/skills/skills.fr.html";
-        projects.href="./pages/skills/skills.fr.html";
-        contact.href="./pages/skills/skills.fr.html";
+        projects.href="./pages/projects/projects.fr.html";
+        contact.href="./pages/contact/contact.fr.html";
 
     }
     else if (value === "home-en") {
@@ -184,10 +184,32 @@ function refreshLink() {
         fr.href="./index.html";
 
         home.href="./index.en.html";
-        me.href="./pages/skills/skills.en.html";
+        me.href="./pages/me/me.en.html";
         skills.href="./pages/skills/skills.en.html";
-        projects.href="./pages/skills/skills.en.html";
-        contact.href="./pages/skills/skills.en.html";
+        projects.href="./pages/projects/projects.en.html";
+        contact.href="./pages/contact/contact.en.html";
+    }
+    else if (value === "me") {
+        en.href="./me.en.html";
+        fr.href="./me.fr.html";
+
+        home.href="../../index.html";
+        me.href="../../pages/me/me.fr.html";
+        skills.href="../../pages/skills/skills.fr.html";
+        projects.href="../../pages/projects/projects.fr.html";
+        contact.href="../../pages/contact/contact.fr.html";
+
+    }
+    else if (value === "me-en") {
+        en.href="./me.en.html";
+        fr.href="./me.fr.html";
+
+        home.href="../../index.en.html";
+        me.href="../../pages/me/me.en.html";
+        skills.href="../../pages/skills/skills.en.html";
+        projects.href="../../pages/projects/projects.en.html";
+        contact.href="../../pages/contact/contact.en.html";
+
     }
 
     else if (value === "skills") {
@@ -195,10 +217,10 @@ function refreshLink() {
         fr.href="./skills.fr.html";
 
         home.href="../../index.html";
-        me.href="../../pages/skills/skills.fr.html";
+        me.href="../../pages/me/me.fr.html";
         skills.href="../../pages/skills/skills.fr.html";
-        projects.href="../../pages/skills/skills.fr.html";
-        contact.href="../../pages/skills/skills.fr.html";
+        projects.href="../../pages/projects/projects.fr.html";
+        contact.href="../../pages/contact/contact.fr.html";
 
     }
     else if (value === "skills-en") {
@@ -206,11 +228,56 @@ function refreshLink() {
         fr.href="./skills.fr.html";
 
         home.href="../../index.en.html";
-        me.href="../../pages/skills/skills.en.html";
+        me.href="../../pages/me/me.en.html";
         skills.href="../../pages/skills/skills.en.html";
-        projects.href="../../pages/skills/skills.en.html";
-        contact.href="../../pages/skills/skills.en.html";
+        projects.href="../../pages/projects/projects.en.html";
+        contact.href="../../pages/contact/contact.en.html";
 
     }
+    else if (value === "projects") {
+        en.href="./projects.en.html";
+        fr.href="./projects.fr.html";
+
+        home.href="../../index.html";
+        me.href="../../pages/me/me.fr.html";
+        skills.href="../../pages/skills/skills.fr.html";
+        projects.href="../../pages/projects/projects.fr.html";
+        contact.href="../../pages/contact/contact.fr.html";
+
+    }
+    else if (value === "projects-en") {
+        en.href="./projects.en.html";
+        fr.href="./projects.fr.html";
+
+        home.href="../../index.en.html";
+        me.href="../../pages/me/me.en.html";
+        skills.href="../../pages/skills/skills.en.html";
+        projects.href="../../pages/projects/projects.en.html";
+        contact.href="../../pages/contact/contact.en.html";
+
+    }
+    else if (value === "contact") {
+        en.href="./contact.en.html";
+        fr.href="./contact.fr.html";
+
+        home.href="../../index.html";
+        me.href="../../pages/me/me.fr.html";
+        skills.href="../../pages/skills/skills.fr.html";
+        projects.href="../../pages/projects/projects.fr.html";
+        contact.href="../../pages/contact/contact.fr.html";
+
+    }
+    else if (value === "contact-en") {
+        en.href="./contact.en.html";
+        fr.href="./contact.fr.html";
+
+        home.href="../../index.en.html";
+        me.href="../../pages/me/me.en.html";
+        skills.href="../../pages/skills/skills.en.html";
+        projects.href="../../pages/projects/projects.en.html";
+        contact.href="../../pages/contact/contact.en.html";
+
+    }
+    
 
 }
