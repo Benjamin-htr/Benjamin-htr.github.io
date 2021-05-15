@@ -147,6 +147,10 @@ barba.init({
     updateline();
     
 }); */
+barba.hooks.after(() => {
+    gtag('config', 'G-YWQX210488', {'page_path': window.location.pathname});
+
+  });
 console.log('barba');
 
 
