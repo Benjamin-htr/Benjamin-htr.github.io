@@ -1,6 +1,6 @@
 function timer(str) {
-  console.log('timer'+str);
-  let p = document.querySelector('.timer'+str);
+  console.log('main[data-barba-namespace="'+str+']'+' .timer');
+  let p = document.querySelector('main[data-barba-namespace="'+str+'"]'+' .timer');
   console.log(p)
   let date = p.dataset.date;
   var countDownDate = new Date(date).getTime();

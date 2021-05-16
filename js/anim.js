@@ -139,6 +139,30 @@ barba.init({
             console.log("sz-home-en");
             /* timer('.en'); */
         },
+    },
+    {
+        namespace: 'me',
+        afterEnter(data) {
+            timer('me');
+        },
+    },
+    {
+        namespace: 'me-en',
+        afterEnter(data) {
+            timer('me-en');
+        },
+    },
+    {
+        namespace: 'skills',
+        afterEnter(data) {
+            timer('skills');
+        },
+    },
+    {
+        namespace: 'skills-en',
+        afterEnter(data) {
+            timer('skills-en');
+        },
     }
 
 ]

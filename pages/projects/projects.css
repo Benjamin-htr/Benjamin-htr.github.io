@@ -13,7 +13,7 @@
   padding-right: 7vw;
   padding-left: 3vw;
 
-  --button3D-color: #077b8a;
+  --button3D-color: #00071C;
 }
 
 .projects-content .menu-title {
@@ -111,7 +111,7 @@
 .projects-content .button3D ul {
   position: relative;
   display: flex;
-  transform: rotate(-0deg) skew(10deg);
+  transform: rotate(-5deg) skew(10deg);
   transform-style: preserve-3d;
   padding : 0;
 }
@@ -121,7 +121,13 @@
   width: 190px;
   height: 70px;
   margin: 0px 20px;
+  box-shadow : 0px 20px 30px black;
   
+}
+
+.projects-content .button3D svg {
+  height: 80%;
+  fill: #fff;
 }
 .projects-content .button3D ul li:before{
   content: '';
@@ -187,7 +193,7 @@
   opacity: .2;
 }
 .projects-content .button3D ul li:nth-child(1):active span, .projects-content .button3D ul li:nth-child(1):hover span{
-  background: #a2d5c6 !important;
+  background: #5c3c92 !important;
 }
 .projects-content .text {
   width : 50vw;
